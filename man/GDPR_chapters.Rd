@@ -18,16 +18,7 @@ The \code{contents} column \link{data.frame} is a nested object, itself containi
 numbers. That \code{contents} column contains further nested \link{data.frame}s of
 points and subpoints, which have not been de-nested.
 
-The top-level article texts are found in
-
-\code{GDPR_chapters$contents[[chapter]]$contents[[article]]$text}
-
-which returns some number of points. See [extract_points] for a more
-accessible method.
-
-[[chapter]: R:[chapter
-[[article]: R:[article
-[extract_points]: R:extract_points}
+See \link{chapter_components} for an accessible method.}
 \source{
 \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
 available under the

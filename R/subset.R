@@ -1,5 +1,6 @@
 #' Extract Components of GDPR Chapters/Articles/Points
 #'
+#' @md
 #' @param chapter chapter from which to extract
 #' @param article article from which to extract
 #' @param points points to extract (default all available)
