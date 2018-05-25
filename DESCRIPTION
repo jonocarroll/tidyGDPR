@@ -1,5 +1,5 @@
 Package: tidyGDPR
-Version: 0.0.1
+Version: 0.1.0
 Title: General Data Protection Regulation as Tidy Object(s)
 Description: The GDPR recitals, chapters, articles, points, subpoints, and citations as tidy objects.
 Authors@R: person("Jonathan", "Carroll", 
