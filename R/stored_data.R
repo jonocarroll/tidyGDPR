@@ -4,16 +4,18 @@
 #' [fromJSON].
 #'
 #' @md
+#' @docType data
 #' @source \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
 #'   available under the
 #'   [CC-by-4.0](https://creativecommons.org/licenses/by/4.0/) license
-# "GDPR_list"
+"GDPR_list"
 
 #' GDPR Regulations Recitals as a Tidy Object
 #'
 #' The GDPR regulations recitals stored as a [tibble].
 #'
 #' @md
+#' @docType data
 #' @format A [tibble] with 173 rows and 3 variables:
 #' \describe{
 #'   \item{number}{Recital number}
@@ -32,6 +34,7 @@
 #' The GDPR regulations chapters stored as a (nested) [tibble].
 #'
 #' @md
+#' @docType data
 #' @format A [tibble] with 11 rows and 4 variables:
 #' \describe{
 #'   \item{number}{Chapter number (Roman Numerals)}
@@ -63,6 +66,7 @@
 #' The GDPR regulations citations stored as a [tibble].
 #'
 #' @md
+#' @docType data
 #' @format A [tibble] with 21 rows and 3 variables:
 #' \describe{
 #'   \item{number}{Citation number}

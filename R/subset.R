@@ -5,6 +5,7 @@
 #' @param points points to extract (default all available)
 #'
 #' @return Either a vector of article titles or a vector of points.
+#' @importFrom utils data
 #' @export
 #'
 #' @examples
@@ -13,9 +14,12 @@
 #' chapter_components(chapter = 1, article = 1, points = 2) # extract (1, 1, 2)
 chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
+  GDPR_chapters <- NULL
+  utils::data("GDPR_chapters")
+
   if (is.null(chapter)) stop("Must specify at least a chapter")
 
-  if (is.null(article)) return(GDPR_chapter$contents[[chapter]]$title)
+  if (is.null(article)) return(GDPR_chapters$contents[[chapter]]$title)
 
   chap_art <- GDPR_chapters$contents[[chapter]]$contents[[article]]$text
 
@@ -26,3 +30,6 @@ chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
   }
 
 }
+
+# @TODO Text Search
+# @BODY Add functionality to search entire text for a string and return containing chapter, article, points.

@@ -3,3 +3,6 @@
 S3method(print,GDPR)
 export(chapter_components)
 export(get_GDPR)
+import(tibble)
+importFrom(jsonlite,fromJSON)
+importFrom(utils,data)

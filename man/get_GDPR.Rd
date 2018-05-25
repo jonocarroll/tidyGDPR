@@ -12,7 +12,7 @@ available under the
 get_GDPR()
 }
 \value{
-the latest GDPR regulation text as a list. See \code{?}\link{GDPR_data} for a more
+the latest GDPR regulation text as a list. See \code{?}\link{GDPR_list} for a more
 detailed description of the returned object.
 }
 \description{

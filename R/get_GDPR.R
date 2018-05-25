@@ -3,8 +3,10 @@
 #' Use this to obtain a (potentially updated) GDPR regulation text.
 #'
 #' @md
-#' @return the latest GDPR regulation text as a list. See `?`[GDPR_data] for a more
+#' @return the latest GDPR regulation text as a list. See `?`[GDPR_list] for a more
 #'   detailed description of the returned object.
+#' @import tibble
+#' @importFrom jsonlite fromJSON
 #' @export
 #'
 #' @source \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
