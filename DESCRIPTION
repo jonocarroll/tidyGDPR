@@ -1,9 +1,16 @@
 Package: tidyGDPR
-Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
-Description: What the package does (one paragraph).
-Authors@R: person("First", "Last", , "first.last@example.com", c("aut", "cre"))
-License: What license it uses
+Version: 0.0.1
+Title: General Data Protection Regulation as Tidy Object(s)
+Description: The GDPR recitals, chapters, articles, points, subpoints, and citations as tidy objects.
+Authors@R: person("Jonathan", "Carroll", 
+ email = "rpkg@jcarroll.com.au", 
+ role = c("aut", "cre"), 
+ comment = c(ORCID = "0000-0002-1404-5264"))
+License: CC0
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
+Imports: 
+    jsonlite,
+    tibble
+RoxygenNote: 6.0.1
