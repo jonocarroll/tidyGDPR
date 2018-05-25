@@ -3,7 +3,7 @@
 \docType{data}
 \name{GDPR_recitals}
 \alias{GDPR_recitals}
-\title{GDPR Regulations Recitals as a Tidy Object}
+\title{GDPR Regulations Recitals as a list}
 \format{A \link{tibble} with 173 rows and 3 variables:
 \describe{
 \item{number}{Recital number}
@@ -14,11 +14,19 @@
 \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
 available under the
 \href{https://creativecommons.org/licenses/by/4.0/}{CC-by-4.0} license
+GDPR Regulations Recitals as a Tidy Object
+
+The GDPR regulations recitals stored as a \link{tibble}.
+
+\url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
+available under the
+\href{https://creativecommons.org/licenses/by/4.0/}{CC-by-4.0} license
 }
 \usage{
 GDPR_recitals
 }
 \description{
-The GDPR regulations recitals stored as a \link{tibble}.
+The GDPR full regulations stored as a list, converted from raw JSON via
+\link{fromJSON}.
 }
 \keyword{datasets}

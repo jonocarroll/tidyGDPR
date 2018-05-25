@@ -21,6 +21,7 @@ If you have any questions, please contact us using the Contact Form available at
 
 Thank you for using R."
 
+  library(tibble)
   packageStartupMessage(paste(strwrap(privacy_text), collapse = "\n"))
 
 }

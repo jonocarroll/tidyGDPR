@@ -1,3 +1,14 @@
+#' GDPR Regulations Recitals as a list
+#'
+#' The GDPR full regulations stored as a list, converted from raw JSON via
+#' [fromJSON].
+#'
+#' @md
+#' @source \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
+#'   available under the
+#'   [CC-by-4.0](https://creativecommons.org/licenses/by/4.0/) license
+# "GDPR_list"
+
 #' GDPR Regulations Recitals as a Tidy Object
 #'
 #' The GDPR regulations recitals stored as a [tibble].

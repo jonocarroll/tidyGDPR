@@ -10,7 +10,7 @@
 #' @source \url{http://openscience.adaptcentre.ie/projects/GDPRtEXT/} Made
 #'   available under the
 #'   [CC-by-4.0](https://creativecommons.org/licenses/by/4.0/) license
-get_GDPR <- function(as = c("list", "data.frame")) {
+get_GDPR <- function() {
   GDPR_json <- "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdpr.json"
   res <- jsonlite::fromJSON(GDPR_json)
 
@@ -41,7 +41,7 @@ get_GDPR <- function(as = c("list", "data.frame")) {
     attr(GDPR_citations, a) <- res[[a]]
   }
 
-  return(list(GDPR_recitals, GDPR_chapters, GDPR_citations))
+  return(list(res, GDPR_recitals, GDPR_chapters, GDPR_citations))
 
 }
 

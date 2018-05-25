@@ -9,7 +9,7 @@ available under the
 \href{https://creativecommons.org/licenses/by/4.0/}{CC-by-4.0} license
 }
 \usage{
-get_GDPR(as = c("list", "data.frame"))
+get_GDPR()
 }
 \value{
 the latest GDPR regulation text as a list. See \code{?}\link{GDPR_data} for a more
