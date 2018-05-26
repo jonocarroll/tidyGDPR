@@ -37,5 +37,5 @@ chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
 }
 
-# @todo Text Search
+# @todo Text search function
 # @body Add functionality to search entire text for a string and return containing chapter, article, points.
