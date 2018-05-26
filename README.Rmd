@@ -1,0 +1,77 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(tidyGDPR)
+```
+
+# tidyGDPR
+
+The General Data Protection Regulation (GDPR) as 'tidy' objects.
+
+## Source
+
+[http://openscience.adaptcentre.ie/projects/GDPRtEXT/](http://openscience.adaptcentre.ie/projects/GDPRtEXT/), made available under the [CC-by-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
+## Installation
+
+You can install the development version of tidyGDPR from [GitHub](https://github.com/jonocarroll/tidyGDPR) with:
+
+```{r, eval = FALSE}
+devtools::install_github("jonocarroll/tidyGDPR")
+```
+
+(please accept all cookies and agree to the terms and conditions.)
+
+## Contents
+
+`tidyGDPR` contains the recitals, chapters, and citations from the GDPR regulations as individual `tibble`s. The recitals
+
+```{r GDPR_recitals}
+GDPR_recitals
+```
+
+The chapters (articles, points, subpoints)
+
+```{r GDPR_chapters}
+GDPR_chapters
+```
+
+and the citations
+
+```{r GDPR_citations}
+GDPR_citations
+```
+
+Also included is the list of all these components, `GDPR_list`.
+
+`GDPR_chapters` contains a column of `contents` which contains deeply nested `data.frame`s of articles, points, and subpoints. 
+
+A helpful extractor function can extract articles and (any subset of) points from within chapters, by number
+
+```{r extract}
+# list all articles in chapter (1)
+chapter_components(chapter = 1) 
+
+# extract all points in (1, 1)
+chapter_components(chapter = 1, article = 1) 
+
+# extract (1, 1, 2)
+chapter_components(chapter = 1, article = 1, points = 2) 
+```
+
+If you wish to obtain the full `GDPR_list` and these components yourself (in the case they are updated) `get_GDPR()` returns a list of each of the above data components.
+
+## Future Work
+
+- Ability to search the fulltext and return chapter/article/point/subpoint.
+- ?
