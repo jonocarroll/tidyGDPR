@@ -1,5 +1,6 @@
-# @TODO Extract subpoints too
-# @BODY Extract some/all subpoints and display how many
+# @todo Extract subpoints too
+# @body Extract some/all subpoints and display how many
+
 #' Extract Components of GDPR Chapters/Articles/Points
 #'
 #' @md
@@ -26,8 +27,8 @@ chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
   chap_art <- GDPR_chapters$contents[[chapter]]$contents[[article]]$text
 
-  #' @TODO Count points
-  #' @BODY Display the total number of points shown/available
+  # @todo Count points
+  # @body Display the total number of points shown/available
   if (!is.null(points)) {
     return(chap_art[points[points <= length(chap_art)]])
   } else {
@@ -36,5 +37,5 @@ chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
 }
 
-# @TODO Text Search
-# @BODY Add functionality to search entire text for a string and return containing chapter, article, points.
+# @todo Text Search
+# @body Add functionality to search entire text for a string and return containing chapter, article, points.

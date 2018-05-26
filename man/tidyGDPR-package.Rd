@@ -8,6 +8,14 @@
 \description{
 The GDPR recitals, chapters, articles, points, subpoints, and citations as tidy objects.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jonocarroll/tidyGDPR}
+  \item Report bugs at \url{https://github.com/jonocarroll/tidyGDPR/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Jonathan Carroll \email{rpkg@jcarroll.com.au} (0000-0002-1404-5264)
 
