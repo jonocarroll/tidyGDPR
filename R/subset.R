@@ -27,7 +27,7 @@ chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
   chap_art <- GDPR_chapters$contents[[chapter]]$contents[[article]]$text
 
-  # @todo Count points/subpoints
+  # @todo Count points/subpoints in selection
   # @body Display the total number of points shown/available
   if (!is.null(points)) {
     return(chap_art[points[points <= length(chap_art)]])
