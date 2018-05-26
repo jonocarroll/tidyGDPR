@@ -18,7 +18,7 @@
 chapter_components <- function(chapter = NULL, article = NULL, points = NULL) {
 
   GDPR_chapters <- NULL
-  utils::data("GDPR_chapters")
+  utils::data("GDPR_chapters", envir = environment())
 
   if (is.null(chapter)) stop("Must specify at least a chapter")
 
